@@ -65,6 +65,7 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 2.7px;
 }
 
 button.main-btn {
@@ -81,7 +82,7 @@ body#home {
   background-image: url(./assets/home/background-home-desktop.jpg);
 }
 
-body#moon {
+body#planet {
   background-image: url(./assets/destination/background-destination-desktop.jpg);
 }
 
@@ -191,6 +192,7 @@ main .main-text {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  align-items: flex-start;
 }
 
 main .main-text p {
@@ -234,6 +236,22 @@ button.main-btn:hover::before {
   display: flex;
   flex-direction: column;
   row-gap: 97px;
+}
+
+main .main-text ul li {
+  color: var(--text-main);
+  margin-right: 35px;
+  padding: 15px 0;
+}
+
+main nav ul li.nav-active {
+  padding: 15px 0;
+  border-bottom: 3px solid var(--text-secondary);
+}
+
+main nav ul li:hover {
+  padding: 15px 0;
+  border-bottom: 3px solid var(--text-secondary);
 }
 
 .planet {
