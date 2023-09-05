@@ -15,6 +15,11 @@
   padding: 0;
 }
 
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
 h1 {
   font-family: var(--belle-fair);
   font-size: 150px;
@@ -56,6 +61,27 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+}
+
+span.subtitle {
+  color: var(--text-main);
+  font-family: var(--barlow);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+
+p.desc {
+  font-family: var(--belle-fair);
+  color: var(--text-secondary);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .nav-text {
@@ -200,6 +226,10 @@ main .main-text p {
   letter-spacing: 1.6px;
 }
 
+main .planet-desc {
+  margin-bottom: 30px;
+}
+
 button.main-btn {
   width: 274px;
   height: 274px;
@@ -244,6 +274,13 @@ main .main-text ul li {
   padding: 15px 0;
 }
 
+main .main-text .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #383b4b;
+  margin-bottom: 4px;
+}
+
 main nav ul li.nav-active {
   padding: 15px 0;
   border-bottom: 3px solid var(--text-secondary);
@@ -252,6 +289,19 @@ main nav ul li.nav-active {
 main nav ul li:hover {
   padding: 15px 0;
   border-bottom: 3px solid var(--text-secondary);
+}
+
+main .main-text .bottom-text {
+  display: flex;
+  width: 100%;
+}
+
+main .main-text .bottom-text .desc {
+  color: var(--text-secondary);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
 }
 
 .planet {
