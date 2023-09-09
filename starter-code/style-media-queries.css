@@ -1,3 +1,25 @@
-@media (max-width: 768px) {
-  body: ;
+@media (max-width: 1540px) {
+  #home main {
+    justify-content: space-between;
+    padding: 0 140px;
+    column-gap: 0;
+  }
+
+  #planet main {
+    justify-content: space-between;
+    padding: 0 60px;
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  #home main {
+    padding: 0 50px;
+  }
+
+  #planet main {
+    justify-content: space-between;
+    padding: 0 20px;
+    column-gap: 0;
+  }
 }

@@ -112,7 +112,7 @@ body#planet {
   background-image: url(./assets/destination/background-destination-desktop.jpg);
 }
 
-body#crews{
+body#crews {
   background-image: url(./assets/crew/background-crew-desktop.jpg);
 }
 
@@ -124,7 +124,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 header {
@@ -198,30 +198,31 @@ header nav ul li.nav-active {
   border-bottom: 3px solid var(--text-secondary);
 }
 
-#home main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 160px;
-  height: 100%;
-  position: relative;
-  margin-bottom: 96px;
-}
-
-#planet main{
-  margin-bottom: 40px;
-}
-
 main {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 160px;
   height: 100%;
   position: relative;
   width: 100%;
+  margin-top: 100px;
+}
+
+#planet main {
+  column-gap: 400px;
+}
+
+#home main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 160px;
+  height: 100%;
+  position: relative;
+  column-gap: 600px;
 }
 
 main .main-text {
@@ -248,6 +249,7 @@ button.main-btn {
   position: relative;
   cursor: pointer;
   border: none;
+  flex-shrink: 0;
 }
 
 button:focus {
@@ -279,16 +281,15 @@ button.main-btn:hover::before {
   row-gap: 97px;
 }
 
-main .main-text ul li{
+main .main-text ul li {
   color: var(--text-main);
   margin-right: 35px;
   padding: 15px 0;
 }
 
-main .main-text ul li a{
+main .main-text ul li a {
   color: var(--text-main);
 }
-
 
 main .main-text .divider {
   width: 100%;
