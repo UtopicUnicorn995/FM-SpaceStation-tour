@@ -38,12 +38,19 @@ h2 {
 
 h3 {
   font-family: var(--belle-fair);
-  font-size: 56;
+  font-size: 56px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 h4 {
   font-family: var(--belle-fair);
   font-size: 32px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.5042;
 }
 
 h5 {
@@ -214,6 +221,15 @@ main {
   column-gap: 400px;
 }
 
+#crews main {
+  column-gap: 200px;
+  flex-direction: row;
+}
+
+.crew {
+  margin-bottom: -100px;
+}
+
 #home main {
   display: flex;
   flex-direction: row;
@@ -233,13 +249,27 @@ main .main-text {
   align-items: flex-start;
 }
 
+#crews main .main-text {
+  width: 500px;
+}
+
 main .main-text p {
   color: var(--text-main);
   letter-spacing: 1.6px;
 }
 
+/* .crew-container{
+  position: absolute;
+  bottom: 0;
+} */
+
 main .planet-desc {
   margin-bottom: 30px;
+}
+
+main .crews-desc {
+  margin-bottom: 80px;
+  width: 450px;
 }
 
 button.main-btn {
@@ -303,6 +333,23 @@ main nav ul li.nav-active {
   border-bottom: 3px solid var(--text-secondary);
 }
 
+#crews main nav ul li.nav-active {
+  border: none;
+}
+
+#crews main nav ul li.nav-active .fa-circle {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+#crews main nav ul li .fa-circle {
+  opacity: 0.175;
+}
+
+#crews main nav ul li {
+  padding: 0;
+}
+
 main nav ul li:hover {
   padding: 15px 0;
   border-bottom: 3px solid var(--text-secondary);
@@ -333,6 +380,18 @@ main .main-text .bottom-text .desc {
 .planet-container h5 span {
   font-weight: 700;
   opacity: 0.2474;
+}
+
+.crew-text-container h5 {
+  letter-spacing: 4.725px;
+  color: var(--text-secondary);
+  margin-bottom: 100px;
+}
+
+.crew-text-container h5 span {
+  margin-right: 20px;
+  font-weight: 700;
+  opacity: 0.25;
 }
 
 .d-none {

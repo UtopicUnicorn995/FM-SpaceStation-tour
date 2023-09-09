@@ -1,3 +1,5 @@
+/* WIDTH MEDIA QUERY */
+
 @media (max-width: 1540px) {
   #home main {
     justify-content: space-between;
@@ -5,7 +7,8 @@
     column-gap: 0;
   }
 
-  #planet main {
+  #planet main,
+  #crews main {
     justify-content: space-between;
     padding: 0 60px;
     column-gap: 0;
@@ -17,9 +20,18 @@
     padding: 0 50px;
   }
 
-  #planet main {
+  #planet main,
+  #crews main {
     justify-content: space-between;
     padding: 0 20px;
     column-gap: 0;
+  }
+}
+
+/* HEIGHT MEDIA QUERY */
+
+@media (max-height: 720px) {
+  .crew {
+    height: 500px;
   }
 }
