@@ -61,6 +61,15 @@ h5 {
   text-transform: uppercase;
 }
 
+h6{
+  font-family: var(--barlow);
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: var(--text-main);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 p {
   color: var(--text-secondary);
   font-family: var(--barlow);
@@ -121,6 +130,10 @@ body#planet {
 
 body#crews {
   background-image: url(./assets/crew/background-crew-desktop.jpg);
+}
+
+body#technology{
+  background-image: url(./assets/technology/background-technology-desktop.jpg);
 }
 
 body {
@@ -226,6 +239,7 @@ main {
   flex-direction: row;
 }
 
+
 .crew {
   margin-bottom: -100px;
 }
@@ -253,15 +267,28 @@ main .main-text {
   width: 500px;
 }
 
+#technology main{
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 26px;
+  padding: 0 0 0 300px;
+}
+
+#technology .main-text{
+  width: 630px;
+  flex-direction: row-reverse;
+}
+
 main .main-text p {
   color: var(--text-main);
   letter-spacing: 1.6px;
 }
 
-/* .crew-container{
-  position: absolute;
-  bottom: 0;
-} */
+#technology .extra-container{
+  display:flex;
+  align-items: center;
+  column-gap: 110px;
+}
 
 main .planet-desc {
   margin-bottom: 30px;
@@ -269,6 +296,11 @@ main .planet-desc {
 
 main .crews-desc {
   margin-bottom: 80px;
+  width: 450px;
+}
+
+main .tech-desc {
+  margin-bottom: 0px;
   width: 450px;
 }
 
@@ -350,9 +382,56 @@ main nav ul li.nav-active {
   padding: 0;
 }
 
+#technology h3{
+  margin-bottom: 20px;
+}
+
+#technology main nav ul{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 32px;
+  margin-right: 80px;
+}
+
+#technology h6{
+  margin-bottom: 12px;
+}
+
+#technology main nav ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid var(--text-main);
+  font-size: 32px;
+  font-family: var(--belle-fair);
+  background-color: rgba(11, 13, 23, 0.25);
+  margin-right: 0;
+}
+
+#technology main nav ul li a{
+  color: var(--text-main);
+}
+
+#technology main nav ul li.nav-active{
+  background-color: var(--text-secondary);
+}
+
+#technology main nav ul li.nav-active a{
+  color: var(--main-color);
+}
+
 main nav ul li:hover {
   padding: 15px 0;
   border-bottom: 3px solid var(--text-secondary);
+}
+
+#crews main nav ul li:hover{
+  border: none;
+  padding: 0;
 }
 
 main .main-text .bottom-text {
@@ -375,6 +454,16 @@ main .main-text .bottom-text .desc {
 .planet-container h5 {
   display: flex;
   column-gap: 12px;
+}
+
+#technology h5{
+  display: flex;
+  column-gap: 12px;
+  font-weight: 400;
+}
+
+#technology h5 span{
+  opacity: 0.25;
 }
 
 .planet-container h5 span {

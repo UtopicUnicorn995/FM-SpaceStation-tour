@@ -13,13 +13,75 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style-media-queries.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
-    00 Home 01 Destination 02 Crew 03 Technology 02 Meet your crew Flight
-    Engineer Anousheh Ansari Anousheh Ansari is an Iranian American engineer and
+  <body id="crews">
+    <audio class="audio" src="./assets/audio/anousha.mp3"></audio>
+    <header>
+      <img class="icon" src="./assets/shared/logo.svg" alt="" />
+      <img class="d-none" src="./assets/shared/icon-hamburger.svg" alt="" />
+      <nav class="">
+        <div class="line"></div>
+        <ul>
+          <li class="nav-text">
+            <a href="./index.html"> <span class="nav-number">00</span> Home </a>
+          </li>
+          <li class="nav-text">
+            <a href="./destination-moon.html">
+              <span class="nav-number">01</span> Destination
+            </a>
+          </li>
+          <li class="nav-text nav-active">
+            <a href="./crew-commander.html">
+              <span class="nav-number">02</span> Crew
+            </a>
+          </li>
+          <li class="nav-text">
+            <span class="nav-number">03</span> Technology
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="douglas">
+      <div class="main-text crew-text-container">
+        <h5><span>02</span>Meet your crew</h5>
+        <h4>Flight
+          Engineer</h4>
+        <h3>Anousheh Ansari</h3>
+        <p class="crews-desc">
+          Anousheh Ansari is an Iranian American engineer and
     co-founder of Prodea Systems. Ansari was the fourth self-funded space
     tourist, the first self-funded woman to fly to the ISS, and the first
     Iranian in space.
+        </p>
+        <nav>
+          <ul>
+            <li class="nav-text ">
+              <a href="./crew-commander.html"><i class="fa fa-circle"></i></a>
+            </li>
+            <li class="nav-text">
+              <a href="./crew-specialist.html"><i class="fa fa-circle"></i></a>
+            </li>
+            <li class="nav-text">
+              <a href="./crew-pilot.html"><i class="fa fa-circle"></i></a>
+            </li>
+            <li class="nav-text  nav-active">
+              <a href="./crew-engineer.html"><i class="fa fa-circle"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="crew-container">
+        <img src="./assets/crew/image-anousheh-ansari.png" alt="" class="crew" />
+      </div>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
