@@ -382,6 +382,10 @@ main nav ul li.nav-active {
   opacity: 0.175;
 }
 
+#crews main nav ul li:hover .fa-circle{
+  opacity: 0.8;
+}
+
 #crews main nav ul li {
   padding: 0;
 }
@@ -418,6 +422,14 @@ main nav ul li.nav-active {
 
 #technology main nav ul li a{
   color: var(--text-main);
+}
+
+#technology main nav ul li:hover{
+  background-color: var(--text-main);
+}
+
+#technology main nav ul li:hover a{
+  color: var(--main-color);
 }
 
 #technology main nav ul li.nav-active{
@@ -491,8 +503,19 @@ main .main-text .bottom-text .desc {
   display: none;
 }
 
+.main-btn:hover{
+  animation: button 10s linear;
+}
+
 @keyframes rotatePlanet {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes button{
+  to{
+    transform: scale(0.5) rotate(9600deg);
+    background-color: #0b0d17;
   }
 }
