@@ -22,7 +22,7 @@
   #planet main,
   #crews main {
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 130px;
     column-gap: 0;
   }
 
@@ -50,6 +50,10 @@
 
   #technology main nav ul{
     margin-right: 30px;
+  }
+
+  header nav .line {
+    display: none;
   }
 }
 
