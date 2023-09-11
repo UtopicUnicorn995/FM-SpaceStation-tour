@@ -474,7 +474,7 @@ main .main-text .bottom-text .desc {
 .crew-text-container h5 {
   letter-spacing: 4.725px;
   color: var(--text-secondary);
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .crew-text-container h5 span {
