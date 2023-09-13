@@ -70,6 +70,10 @@
     top: 0;
   }
 
+  button.main-btn::before{
+    padding: 40px;
+  }
+
   #planet main,
   #crews main {
     justify-content: space-between;
@@ -102,10 +106,23 @@
     content: url(./assets/technology/image-launch-vehicle-landscape.jpg);
     width: 100%;
   }
+  #spaceport img{
+    content: url(./assets/technology/image-spaceport-landscape.jpg);
+    width: 100%;
+  }
+  #capsule img{
+    content: url(./assets/technology/image-space-capsule-landscape.jpg);
+    width: 100%;
+  }
+
+  .tech-container{
+    width: 100%;
+  }
 
   #technology .main-text{
     flex-direction: column-reverse;
     align-items: center;
+    row-gap: 40px;
   }
 
   #technology main nav ul{
@@ -134,6 +151,130 @@
     font-size: 16px;
   }
   
+}
+
+/* TABLET BREAKPOINT */
+
+@media (max-width: 1024px) {
+  body#home{
+    background-image: url(./assets/home/background-home-tablet.jpg);
+  }
+  body#planet{
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+  }
+  h2{
+    font-size: 80px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  h5{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .nav-text{
+    text-transform: uppercase;
+  }
+  main{
+    margin-top: 0;
+  }
+  #home main{
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  main .main-text{
+    align-items: center;
+  }
+  main .main-text p{
+    text-align: center;
+  }
+  header .icon{
+    margin-left: 40px;
+  }
+  header nav .nav-number{
+    display: none;
+  }
+  header nav{
+    min-width: 450px;
+  }
+  header nav ul{
+    column-gap: 35px;
+  }
+  header nav .nav-text{
+    font-size: 14px;
+  }
+  nav ul li:last-child{
+    margin: 0;
+  }
+  button.main-btn{
+    width: 242px;
+    height: 242px;
+  }
+  #planet main{
+    flex-direction: column-reverse;
+  }
+  #crews main{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  #planet .planet-container {
+    row-gap: 40px;
+    width: 100%;
+  }
+  #planet .planet-container img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .planet-container h5{
+    margin-left: 30px;
+  }
+  #planet main .main-text{
+    max-width: 575px;
+    width: 100%;
+  }
+  main .main-text{
+    row-gap: 20px;
+  }
+  #crews nav ul{
+    margin-bottom: 0px;
+  }
+  main .crews-desc{
+    margin-bottom: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  .crew-container{
+    max-width: 420px;
+  }
+  .crew-container .crew{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  #crews main .main-text{
+    width: 100%;
+  }
+  #crews main .main-text h5{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+  #crews main .main-text nav ul{
+    margin-bottom: 40px;
+  }
+  #crews main .main-text ul li{
+    margin-right: 16px;
+  }
+  #crews main nav ul li a .fa-circle{
+    height: 10px;
+    width: 10px;
+    font-size: 10px;
+  }
+  #technology .extra-container{
+    margin: 0;
+    width: 100%
+  }
+
 }
 
 /* HEIGHT MEDIA QUERY */
