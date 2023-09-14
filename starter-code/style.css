@@ -202,9 +202,9 @@ nav ul li:last-child {
   margin-right: 40px;
 }
 
-/* #crews nav ul{
-  margin-bottom: 20px;
-} */
+.icon-hamburger{
+  display: none;
+}
 
 header nav .nav-number {
   font-weight: 700;
@@ -260,7 +260,7 @@ main {
 }
 
 main .main-text {
-  width: 445px;
+  max-width: 445px;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -279,7 +279,7 @@ main .main-text {
 }
 
 #technology .main-text{
-  width: 630px;
+  max-width: 630px;
   flex-direction: row-reverse;
 }
 
@@ -301,13 +301,13 @@ main .planet-desc {
 
 main .crews-desc {
   margin-bottom: 50px;
-  width: 450px;
+  max-width: 450px;
   font-weight: 400;
 }
 
 main .tech-desc {
   margin-bottom: 0px;
-  width: 450px;
+  max-width: 450px;
 }
 
 button.main-btn {
@@ -502,9 +502,7 @@ main .main-text .bottom-text .desc {
   opacity: 0.25;
 }
 
-.d-none {
-  display: none;
-}
+
 
 .main-btn:hover{
   animation: button 10s linear;

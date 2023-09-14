@@ -1,9 +1,9 @@
-const main = document.querySelector("main");
+const btn = document.querySelector('.icon-hamburger')
+const nav = document.querySelector(' header nav')
+const main = document.querySelector('main')
 
-
-// Create audio on load
-function audio() {
-  document.querySelector(".audio").play();
-}
-
-window.onload = audio();
+btn.addEventListener('click', () => {
+  btn.classList.toggle('active')
+  nav.classList.toggle('active')
+  main.classList.toggle('active')
+})
